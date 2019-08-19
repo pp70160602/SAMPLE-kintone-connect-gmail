@@ -7,6 +7,27 @@
  *
  * Licensed under the MIT License
  */
+
+app: {
+    appClientID: "{314996904547-n47npoiobsbd8ud4i5r9su1o3kb50s3q.apps.googleusercontent.com}", // the Google app client ID
+    fieldsCode: {
+        attachment: "attachment",    // ATTACHMENT field
+        bcc: "bcc",                  // SINGLE_LINE_TEXT field
+        cc: "cc",                    // SINGLE_LINE_TEXT field
+        content: "message",          // RICH_TEXT field
+        dateTime: "Date_and_time",   // DATE_AND_TIME field
+        from: "from",                // SINGLE_LINE_TEXT field
+        labels: "labels_id",         // SINGLE_LINE_TEXT field
+        mailAccount: "email_account",// SINGLE_LINE_TEXT field
+        messageID: "message_id",     // SINGLE_LINE_TEXT field
+        owner: "owner",              // USER_SELECTION field
+        subject: "subject",          // SINGLE_LINE_TEXT field
+        threadID: "thread_id",       // SINGLE_LINE_TEXT field
+        to: "to"                     // SINGLE_LINE_TEXT field
+    },
+    extensionProhibited: [/*your extensions (seperated with comma)*/] // Example: ['exe', 'csv']
+}
+
 (function (PLUGIN_ID, KC, GAPI) {
     'use strict';
     if (KC === null) {
